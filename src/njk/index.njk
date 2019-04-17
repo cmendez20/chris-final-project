@@ -5,9 +5,8 @@
 {% block content %}
 
 <div class="container">
-  {% include "_partials/jumbotron.njk" %}
   <div class="row">
-    <div class="col">
+    <div class="col text-center">
       <h1>About Queen</h1>
     </div>
   </div>
@@ -16,20 +15,15 @@
       <p>
         Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals and piano), Brian May (lead guitar and vocals), Roger Taylor (drums and vocals), and John Deacon (bass guitar). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.
       </p>
-      <ul> 
-        {% for book in data.books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
-        {% else %}
-          <li>This would display if the 'books' collection were empty</li>
-        {% endfor %}
-     </ul>
     </div>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col text-center">
       <h1>The Classic Line-up</h1>
-      {% include "_partials/line-up.njk" %}
     </div>
   </div>
+
+  {% include "_partials/cards.njk" %}
+  
 </div>
 {% endblock %}
