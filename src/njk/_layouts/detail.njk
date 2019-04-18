@@ -6,19 +6,28 @@
   <div class="row">
     <div class="col-sm-4 left-rail">
       {% block info %}
+      
         <img src="../img/members/{{ member.imagebw }}" alt="A picture of {{ member.name }}" class="img-fluid mb-3">
-        <h2 class="mt-3 mb-0">Biography</h2><br>
-        <p class="mt-0">Birthplace: {{ member.birthplace }}</p>
-        <p>Birthdate: {{ member.birthdate }}</p>
-        <p>Instruments: {{ member.instruments }}</p>
-        <p>Tenure: {{ member.tenure }}</p>
+        <div class="border border-danger text-center mb-3">
+          <h2 class="mt-3 mb-0 pt-1">QUICK FACTS</h2><br>
+          <dl>
+            <dt>NAME</dt>
+            <dd>{{ member.name }}</dd>
+            <dt>INSTRUMENTS</dt>
+            <dd>{{ member.instruments }}</dd>
+            <dt>BIRTHDATE</dt>
+            <dd>{{ member.birthdate }}</dd>
+            <dt>PLACE OF BIRTH</dt>
+            <dd>{{ member.birthplace }}</dd>
+          </dl>
+        </div>
       {% endblock %}
 
     </div>
     <div class="col-sm-8">
     {% block story %}
-      <h2>Description</h2>
-      {{ member.text }} 
+      <h2>SYNOPSIS</h2>
+      {{ member.text | safe}} 
     {% endblock %}
 
     </div>

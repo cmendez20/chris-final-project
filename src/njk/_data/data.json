@@ -3,6 +3,7 @@
     {
       "slug": "freddie-mercury",
       "name": "Freddie Mercury",
+      "quote": "\"Don't stop me now, I'm having such a good time, I'm having a ball\"",
       "instruments": "Vocals, keyboards",
       "tenure": "(1970–1991; his death)",
       "birthplace": "Stone Town, Zanzibar",
@@ -14,6 +15,7 @@
     {
       "slug": "brian-may",
       "name": "Brian May",
+      "quote": "\"The guitar has a kind of grit and excitement possessed by nothing else\"",
       "instruments": "Guitar, keyboards, vocals",
       "tenure": "(1970–present)",
       "birthplace": "Hampton, England",
@@ -25,6 +27,7 @@
     {
       "slug": "roger-taylor",
       "name": "Roger Taylor",
+      "quote": "\"There's something rather nice about spending the evening hitting things.\"",
       "instruments": "Drums, guitar, keyboards, vocals",
       "tenure": "(1970–present)",
       "birthplace": "King's Lynn, England",
@@ -36,6 +39,7 @@
     {
       "slug": "john-deacon",
       "name": "John Deacon",
+      "quote": "\"Lot's of marriages don't last as long as Queen have been together.\"",
       "instruments": "Bass, guitar, keyboards",
       "tenure": "(1971–1997)",
       "birthplace": "Leicester, England",
