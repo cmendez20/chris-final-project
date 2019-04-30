@@ -6,10 +6,11 @@
         <img src="/img/members/edited/{{ member.imgcut }}" class="card-img img-fluid" alt="An image of {{ member.name }}">
       </div>
       <div class="col-md-8">
-        <div class="card-body ">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{ member.name }}</h5>
           <p class="card-text">{{ member.cardtxt }}</p>
-          <a href="{{ member.link }}" class="btn btn-primary d-flex flex-column justify-content-end">Read More</a>
+          
+          <a href="{{ member.link }}" class="btn btn-primary mt-auto btn-position">Read More</a>
         </div>
       </div>
     </div>

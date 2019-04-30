@@ -8,7 +8,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
 </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.html"><span class="navbar-brand mb-0 h1">QUEEN</span></a>
@@ -43,17 +73,17 @@
 
   
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">QUEEN</h1>
-    <p class="lead">a British rock band formed in 1970. Their classic line-up was Freddie Mercury, Brian May, Roger Taylor, and John Deacon.</p>
-    <a class="btn btn-primary btn-lg" href="#about_queen" role="button">Learn more</a>
+<section class="hero">
+  <div class="hero-inner">
+    <h1>QUEEN</h1>
+    <h2>A British rock band formed in 1970.</h2>
+    <a href="#about_queen" class="btn btn-lg">Rock on</a>
   </div>
-</div>
+</section>
 
 <div class="container">
   <div class="row">
-    <div class="col text-center">
+    <div class="col text-center mt-3">
       <a id="about_queen"><h1>About Queen</h1></a>
     </div>
   </div>
@@ -79,10 +109,11 @@
         <img src="/img/members/edited/freddie-mercury-color-edited.png" class="card-img img-fluid" alt="An image of Freddie Mercury">
       </div>
       <div class="col-md-8">
-        <div class="card-body ">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">Freddie Mercury</h5>
-          <p class="card-text">Farrokh Bulsara, known professionally as Freddie Mercury, was a British singer-songwriter and record producer, best known as the lead vocalist of the rock band Queen.</p>
-          <a href="freddie-mercury.html" class="btn btn-primary d-flex flex-column justify-content-end">Read More</a>
+          <p class="card-text">Freddie Mercury was a British singer-songwriter and record producer, best known as the lead vocalist of the rock band Queen.</p>
+          
+          <a href="freddie-mercury.html" class="btn btn-primary mt-auto btn-position">Read More</a>
         </div>
       </div>
     </div>
@@ -94,10 +125,11 @@
         <img src="/img/members/edited/brian-may-color-edited.png" class="card-img img-fluid" alt="An image of Brian May">
       </div>
       <div class="col-md-8">
-        <div class="card-body ">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">Brian May</h5>
           <p class="card-text">Brian Harold May, CBE is an English musician, singer, songwriter and photographer.</p>
-          <a href="brian-may.html" class="btn btn-primary d-flex flex-column justify-content-end">Read More</a>
+          
+          <a href="brian-may.html" class="btn btn-primary mt-auto btn-position">Read More</a>
         </div>
       </div>
     </div>
@@ -109,10 +141,11 @@
         <img src="/img/members/edited/roger-taylor-color-edited.png" class="card-img img-fluid" alt="An image of Roger Taylor">
       </div>
       <div class="col-md-8">
-        <div class="card-body ">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">Roger Taylor</h5>
           <p class="card-text">Roger Meddows Taylor is an English musician, singer, songwriter, and multi-instrumentalist, best known as the drummer for the rock band Queen.</p>
-          <a href="roger-taylor.html" class="btn btn-primary d-flex flex-column justify-content-end">Read More</a>
+          
+          <a href="roger-taylor.html" class="btn btn-primary mt-auto btn-position">Read More</a>
         </div>
       </div>
     </div>
@@ -124,10 +157,11 @@
         <img src="/img/members/edited/john-deacon-color-edited.png" class="card-img img-fluid" alt="An image of John Deacon">
       </div>
       <div class="col-md-8">
-        <div class="card-body ">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">John Deacon</h5>
           <p class="card-text">John Richard Deacon is an English retired musician, best known for being the bass guitarist for the rock band Queen.</p>
-          <a href="john-deacon.html" class="btn btn-primary d-flex flex-column justify-content-end">Read More</a>
+          
+          <a href="john-deacon.html" class="btn btn-primary mt-auto btn-position">Read More</a>
         </div>
       </div>
     </div>
