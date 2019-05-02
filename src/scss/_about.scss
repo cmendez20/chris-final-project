@@ -1,4 +1,27 @@
 .full-screen {
+  /* Sizing */
   width: 100vw;
   height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
 }
+
+.about-bg {
+  background-color: #d12b01;
+}
+
+.about-bg h2 {
+  font-family: 'Cinzel', serif;
+  font-size:7em;
+  line-height: 10rem;
+  color: #FEFEFA;
+}
+
+
+

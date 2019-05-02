@@ -30,7 +30,7 @@
    margin-bottom: 0.5em;
 }
 
-.hero .btn {
+.hero .btn-hero {
   /* Positioning and sizing */
   display: block;
   width: 200px;
@@ -45,11 +45,12 @@
   text-decoration: none;
   font-size: 1.5em;
 
-  
-  
+/* Border styles */
+  border: 3px solid white;
+  border-radius: 20px;  
 
   /* Background styles */
-  background-color: rgba(128, 128, 128, 0.8);
+  background-color: rgba(209, 43, 1, 0.8);
 
 }
 
