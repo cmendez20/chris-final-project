@@ -6,9 +6,9 @@
 
 {% include "_partials/hero-page-test.njk" %}
 
-
+<main>
   <div class="row">
-    <a id="about_queen"><div class="col text-center mt-0 about-bg mr-3 ml-0 full-screen"></a>
+    <a id="about_queen"><div class="fadeIn col text-center mt-0 about-bg mr-3 ml-0 full-screen"></a>
       <h2>ABOUT <br> QUEEN</h2>
 
     </div>
@@ -18,23 +18,25 @@
         <br> <br>
         - Source: <a target="_blank" href="https://en.wikipedia.org/wiki/Freddie_Mercury">Wikipedia</a>
       </p>
-      
     </div>
   </div>
+</main>
 
 <div class="container">
+  <main>
   <div class="row">
-    <div class="col text-center mt-3">
+    <div class="col text-center mt-5">
       <h1>The Classic Line-up</h1>
     </div>
   </div>
 
   {% include "_partials/cards.njk" %}
+  
 
-  <div class="col text-center mt-3">
+  <div class="col text-center mt-5">
     <h1>Discography</h1>
   </div>
   {% include "_partials/media-list.njk" %}
-  
+  </main>
 </div>
 {% endblock %}

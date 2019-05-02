@@ -12,6 +12,10 @@
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scroll.js"></script> 
+<script src="js/jquery.js"></script> 
+<script src="js/fadein.js"></script>
+
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -37,6 +41,22 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+$(document).on("scroll", function () {
+    var pageTop = $(document).scrollTop()
+    var pageBottom = pageTop + $(window).height()
+    var tags = $("main")
+
+    for (var i = 0; i < tags.length; i++) {
+      var tag = tags[i]
+
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass("visible")
+      } else {
+        $(tag).removeClass("visible")
+      }
+    }
+  });
 </script>
 
 <body>
@@ -81,9 +101,9 @@ $(document).ready(function(){
   </div>
 </section>
 
-
+<main>
   <div class="row">
-    <a id="about_queen"><div class="col text-center mt-0 about-bg mr-3 ml-0 full-screen"></a>
+    <a id="about_queen"><div class="fadeIn col text-center mt-0 about-bg mr-3 ml-0 full-screen"></a>
       <h2>ABOUT <br> QUEEN</h2>
 
     </div>
@@ -93,13 +113,14 @@ $(document).ready(function(){
         <br> <br>
         - Source: <a target="_blank" href="https://en.wikipedia.org/wiki/Freddie_Mercury">Wikipedia</a>
       </p>
-      
     </div>
   </div>
+</main>
 
 <div class="container">
+  <main>
   <div class="row">
-    <div class="col text-center mt-3">
+    <div class="col text-center mt-5">
       <h1>The Classic Line-up</h1>
     </div>
   </div>
@@ -173,8 +194,9 @@ $(document).ready(function(){
 </div>
 
 
+  
 
-  <div class="col text-center mt-3">
+  <div class="col text-center mt-5">
     <h1>Discography</h1>
   </div>
   <div class="container">
@@ -308,7 +330,7 @@ $(document).ready(function(){
   </div>
 </div>
 
-  
+  </main>
 </div>
 
 
