@@ -12,11 +12,12 @@
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scroll.js"></script> 
 <script src="js/jquery.js"></script> 
+<script src="js/scroll.js"></script> 
 <script src="js/fadein.js"></script>
 
 <script>
+// Smooth Scrolling js function
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -42,6 +43,7 @@ $(document).ready(function(){
   });
 });
 
+//fade-in content js function
 $(document).on("scroll", function () {
     var pageTop = $(document).scrollTop()
     var pageBottom = pageTop + $(window).height()

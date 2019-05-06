@@ -12,11 +12,12 @@
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scroll.js"></script> 
 <script src="js/jquery.js"></script> 
+<script src="js/scroll.js"></script> 
 <script src="js/fadein.js"></script>
 
 <script>
+// Smooth Scrolling js function
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -42,6 +43,7 @@ $(document).ready(function(){
   });
 });
 
+//fade-in content js function
 $(document).on("scroll", function () {
     var pageTop = $(document).scrollTop()
     var pageBottom = pageTop + $(window).height()
@@ -60,7 +62,7 @@ $(document).on("scroll", function () {
 </script>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <a class="navbar-brand" href="index.html"><span class="navbar-brand mb-0 h1">QUEEN</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -102,7 +104,7 @@ $(document).on("scroll", function () {
 </section>
 
 <main>
-  <div class="row">
+  <div class="row mb-3">
     <a id="about_queen"><div class="fadeIn col text-center mt-0 about-bg mr-3 ml-0 full-screen"></a>
       <h2>ABOUT <br> QUEEN</h2>
 
@@ -193,15 +195,18 @@ $(document).on("scroll", function () {
 
 </div>
 
+<br>
 
+
+  </main>
   
-
-  <div class="col text-center mt-5">
+  <main>
+  <div class="col text-center mt-5 mb-3">
     <h1>Discography</h1>
   </div>
   <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
 
       <ul class="list-unstyled" style="display:inline-block;vertical-align:middle;">
         
@@ -341,7 +346,6 @@ $(document).on("scroll", function () {
     A class project by <a target="_blank" href="https://github.com/cmendez20"> Christopher Mendez.</a>
   </div>
   <!-- Copyright -->
-
 </footer>
 
 

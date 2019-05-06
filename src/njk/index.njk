@@ -4,10 +4,10 @@
 
 {% block content %}
 
-{% include "_partials/hero-page-test.njk" %}
+{% include "_partials/hero-page.njk" %}
 
 <main>
-  <div class="row">
+  <div class="row mb-3">
     <a id="about_queen"><div class="fadeIn col text-center mt-0 about-bg mr-3 ml-0 full-screen"></a>
       <h2>ABOUT <br> QUEEN</h2>
 
@@ -31,9 +31,10 @@
   </div>
 
   {% include "_partials/cards.njk" %}
+  </main>
   
-
-  <div class="col text-center mt-5">
+  <main>
+  <div class="col text-center mt-5 mb-3">
     <h1>Discography</h1>
   </div>
   {% include "_partials/media-list.njk" %}
