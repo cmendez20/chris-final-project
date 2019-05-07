@@ -23,5 +23,13 @@
   color: #FEFEFA;
 }
 
+@media (max-width: 620px) {
+.about-bg h2 {
+  font-size: 2em;
+  line-height: 5rem;
+}
 
-
+#about-page p {
+  font-size: 0.5em;
+}
+}
