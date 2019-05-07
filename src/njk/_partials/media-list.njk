@@ -1,13 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 p-0">
+
+  <div class="row justify-content-center">
+    <div class="col-9 p-0">
 
       <ul class="list-unstyled">
         {% for discs in data.discography %}
-        <li class="media">
-          <img class="mr-3 mb-3 discs-image" src="img/discs/{{ discs.image }}" alt="An Image of a Queen Album">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">{{ discs.title }}</h5>
+        <li class="media d-inline-block">
+          <img class="mr-3 mb-3 discs-image justify-self-center" src="img/discs/{{ discs.image }}" alt="An Image of a Queen Album">
+          <div class="media-body mb-3 text-center">
+            <h5 class="mt-0 mb-3">{{ discs.title }}</h5>
             {{ discs.year }}
           </div>
         </li>
@@ -15,4 +15,22 @@
       </ul>
     </div>
   </div>
+
+
+
+<div class="row justify-content-center">
+
+  <div class="col-3 d-inline-block">
+    {% for discs in data.discography %}
+    <div class="media">
+      <img class="d-flex mr-3 discs-image" src="img/discs/{{ discs.image }}" alt="Generic placeholder image">
+      <div class="media-body">
+        <h5 class="mt-0 font-weight-bold">{{ discs.title }}</h5>
+        {{ discs.year }}
+      </div>
+    </div>
+  </div>
 </div>
+{% endfor %}
+
+
